@@ -5,9 +5,7 @@
     flex-direction: row;
   }
  
-  #button {
-      
-    
+  #button {  
  text-align: center;
   border-radius: 15px;
   cursor: pointer;
@@ -30,6 +28,42 @@
       font-family: 'Coiny', cursive;
       color :red;
       font-size: 50px;
+  }
+  @media only screen and (max-width: 700px){
+    #textAreas {
+   
+        display: inline;
+        flex-wrap: nowrap;
+        flex-direction: row;
+      }
+     
+      #button {  
+     text-align: center;
+      border-radius: 15px;
+      cursor: pointer;
+      color: black;
+      vertical-align: middle;
+      }
+     #toLang, #fromLang {
+        background: #e0caca;
+        width: 85%;
+        height: 250px;
+        font-size: 20px;
+        border-radius: 30px;
+        
+      }
+      #fromLang{
+          margin: 8px 50px 10px 30px;
+      }
+      #toLang{
+        margin: 0px 100px 100px 30px;
+    }
+    
+    #h1{
+          font-family: 'Coiny', cursive;
+          color :red;
+          font-size: 50px;
+      }
   }
 
  

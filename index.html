@@ -25,35 +25,21 @@
         <input type=button value="Traducir" class="btn btn-success"  onclick="transla()"> 
     </div>
     
-    <form name="action" class="text-center">
-    <div id="textAreas">
+    <form name="action" class="form-group">
+    <div id="textAreas"class ="form-group">
         
-            <textarea name="fromLang" id="fromLang"
-            placeholder="escribe el texto a traducir"></textarea>
+            <textarea name="fromLang" id="fromLang" placeholder="escribe el texto a traducir" class="form-control"></textarea>
 
        
         
-            <textarea name="toLang" id="toLang" disabled></textarea>
+            <textarea name="toLang" id="toLang" disabled class="form-control"></textarea>
        
     </div>
      
    </form>
     <script> 
             function transla(){  
-                /*
-   console.log(response)
-  
-
-   const response = https://translate.yandex.net/api/v1.5/tr.json/translate ? key=trnsl.1.1.20190118T151014Z.0954833f0a34d74b.01a444b7d5114f75bda8289bc0eb1938f592e600 
-   & text = document.action.fromLang.value
-   & lang = sp,en 
-  console.log(response)
-
-  const myJson = await response.json(); //extract JSON from the http response
-  // do something with myJson
-  console.log(myJson)
-  document.action.toLang.value = myJson
-*/
+   
   var url = "https://translate.yandex.net/api/v1.5/tr.json/translate",
     keyAPI = "trnsl.1.1.20190118T151014Z.0954833f0a34d74b.01a444b7d5114f75bda8289bc0eb1938f592e600";
 
