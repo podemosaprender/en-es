@@ -1,0 +1,35 @@
+#textAreas {
+   
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+ 
+  #button {
+      
+    
+ text-align: center;
+  border-radius: 15px;
+  cursor: pointer;
+  color: black;
+  vertical-align: middle;
+  }
+ #toLang, #fromLang {
+    background: #e0caca;
+    width: 40%;
+    height: 250px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 30px;
+    
+  }
+  #fromLang{
+      margin: 0px 100px 0px 80px;
+  }
+#h1{
+      font-family: 'Coiny', cursive;
+      color :red;
+      font-size: 50px;
+  }
+
+ 
