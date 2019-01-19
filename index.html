@@ -19,16 +19,13 @@
      
 </head>
 
-<body>
+<body id="body">
     <h1 class="text-center" id="h1">Translate</h1>
-    <div class="text-center">
-        <input type=button value="Traducir" class="btn btn-success"  onclick="transla()"> 
-    </div>
     
     <form name="action" class="form-group">
     <div id="textAreas"class ="form-group">
         
-            <textarea name="fromLang" id="fromLang" placeholder="type text to translate..." class="form-control ph-center"></textarea>
+            <textarea onkeyup="transla()" onkeydown="transla()" name="fromLang" id="fromLang" placeholder="type text to translate..." class="form-control ph-center"></textarea>
 
        
         
@@ -51,6 +48,7 @@
     xhr.open("POST",url,true);
     xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
     xhr.send(data);
+
     xhr.onreadystatechange = function() {
         if (this.readyState==4 && this.status==200) {
             var res = this.responseText;
