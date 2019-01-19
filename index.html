@@ -28,11 +28,11 @@
     <form name="action" class="form-group">
     <div id="textAreas"class ="form-group">
         
-            <textarea name="fromLang" id="fromLang" placeholder="escribe el texto a traducir" class="form-control"></textarea>
+            <textarea name="fromLang" id="fromLang" placeholder="type text to translate..." class="form-control ph-center"></textarea>
 
        
         
-            <textarea name="toLang" id="toLang" disabled class="form-control"></textarea>
+            <textarea name="toLang" id="toLang"  class="form-control"></textarea>
        
     </div>
      
@@ -46,7 +46,7 @@
 
     var xhr = new XMLHttpRequest(),
         textAPI = document.action.fromLang.value,
-        langAPI = "en",
+        langAPI = "es",
         data = "key="+keyAPI+"&text="+textAPI+"&lang="+langAPI;
     xhr.open("POST",url,true);
     xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
