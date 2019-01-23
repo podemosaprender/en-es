@@ -18,6 +18,7 @@
 	<!-- github: https://github.com/podemosaprender/en-es -->
 </head>
 
+
 <body>
     <form name="action" class="form-group">
 			<div id="textAreas"class ="form-group">
@@ -28,6 +29,7 @@
 			<div class="text-center">
 				<p><button>Prepare url for sharing</button> - Thanks <a href="http://www.podemosaprender.org/con/marianopuchetta">Mariano Puchetta</a> - <a href="http://www.podemosaprender.org/en-es/?">http://www.podemosaprender.org/en-es/?</a></p>
 			</div>
+
 
    	</form>
     <script> 
@@ -49,10 +51,12 @@
           toLang = "es",
           data = "key="+keyAPI+"&text="+fromTxt+"&lang="+toLang;
 
+
       xhr.open("POST",url,true);
       xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
       xhr.send(data);
       xhr.onreadystatechange = function() {
+
         if (this.readyState==4 && this.status==200) {
           var res = this.responseText;
 
